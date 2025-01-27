@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="styles/quizgame.css">
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <script src="scripts/quizgame.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Quiz Game</h1>
+        <p   class="tagline">--Think Fast, Score Big!</p>
+    </header>
+    <main>
+        <div class="container">
+            <div id="quiz-setup">
+                <h2>Start a New Quiz</h2>
+                <label for="category">Category:</label>
+                <select id="category">
+                    <option value="9">General Knowledge</option>
+                    <option value="21">Sports</option>
+                    <option value="23">History</option>
+                    <option value="17">Science & Nature</option>
+                    <option value="27">Animals</option>
+                </select>
+                <label for="difficulty">Difficulty:</label>
+                <select id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+                <button id="start-quiz">Start Quiz</button>
+            </div>
+
+            <div id="quiz-container" class="hidden">
+                <div id="question-container"></div>
+                <div id="answers-container"></div>
+                <button id="next-question" class="hidden">Next Question</button>
+            </div>
+
+            <div id="quiz-results" class="hidden">
+                <h2>Your Score: <span id="score"></span></h2>
+                <button id="restart-quiz">Restart Quiz</button>
+            </div>
+    </main>
+    </div>
+
+
+
+</body>
+
+</html>
