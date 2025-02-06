@@ -93,3 +93,42 @@ button:hover {
 .wrong {
     background-color: #dc3545;
 }
+
+
+@media  screen and (max-width: 480px) {
+    .container {
+        max-width: 95%;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    .tagline {
+        font-size: 0.9rem;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    select {
+        width: 100%;
+        padding: 8px;
+        font-size: 1rem;
+    }
+
+    .answer {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
+}
